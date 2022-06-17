@@ -1,0 +1,390 @@
+<app-admin-navbar></app-admin-navbar>
+
+<router-outlet> </router-outlet>
+<!-- <div class="ms-content-wrapper">
+    <div class="ms-panel">
+        <div class="ms-panel-header">
+            <h6>Inventory List</h6>
+            <a id="add" class="btn btn-primary"> Add Item </a>
+            <div class="table-responsive">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="data-table-5" class="table  thead-primary dataTable no-footer" role="grid"
+                            aria-describedby="data-table-5_info" style="width: 843px;">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="data-table-5"
+                                        rowspan="1" colspan="1" aria-sort="ascending"
+                                        aria-label="Product ID: activate to sort column descending"
+                                        style="width: 116px;">Ingredient ID</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Product Name: activate to sort column ascending"
+                                        style="width: 244px;">Ingredient Name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Quantity: activate to sort column ascending"
+                                        style="width: 97px;">Description</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Status: activate to sort column ascending"
+                                        style="width: 108px;">Inventory ID</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Status: activate to sort column ascending"
+                                        style="width: 108px;">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd">
+                                    <td class="sorting_1">01475</td>
+                                    <td>Wheat</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Rem,
+                                        repellat!</td>
+                                    <td>46607</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">02351</td>
+                                    <td>Rice</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Rem,
+                                        repellat!</td>
+                                    <td>46607</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">12121</td>
+                                    <td>Turmeric</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Rem,
+                                        repellat!</td>
+                                    <td>46607</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">12145</td>
+                                    <td>Salt</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Rem,
+                                        repellat!</td>
+                                    <td>06607</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">14451</td>
+                                    <td>Garam Masaala</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Rem,
+                                        repellat!</td>
+                                    <td>16607</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">14526</td>
+                                    <td>Non-veg Masaala</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Rem,
+                                        repellat!</td>
+                                    <td>26607</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">15451</td>
+                                    <td>Lorem</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Rem,
+                                        repellat!</td>
+                                    <td>56607</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="ms-content-wrapper">
+    <div class="ms-panel">
+        <div class="ms-panel-header">
+            <h6 class="inventorylist">Inventory List</h6>
+            <hr>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal" id="add"> Add
+                Item </button>
+                <div class="table-responsive">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table id="data-table-5" class="table  thead-primary dataTable no-footer" role="grid"
+                                aria-describedby="data-table-5_info" style="width: 843px;">
+                                <thead class="thead">
+                                    <tr>
+                                        <th scope="col">Ingredient Id</th>
+                                        <th scope="col">Ingredient Name</th>                                    
+                                        <th scope="col">Type</th>                                    
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Supplier Id</th>
+                                        <th scoppe="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody">
+                                    <tr *ngFor="let inventory of inventoryDetails">
+                                        <td>{{inventory.ingredientId}}</td>
+                                        <td>{{inventory.ingredientName}}</td>
+                                        <td>{{inventory.type}}</td>
+                                        <td>{{inventory.ingredientQuantity}}</td>
+                                        <td>{{inventory.supplierId}}</td>
+                                        
+
+                                        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" (click)="edit(inventory)" id="update">Update</button>&nbsp;
+                                        <button type="button" class="btn btn-danger" (click)="deleteInventory(inventory)" id="delete">Delete</button></td>
+                                    </tr>
+    
+                                </tbody>
+                            </table>
+    
+                        </div>
+    
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Ingredient</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <form action="" #inventoryAddForm="ngForm" (ngSubmit)="onSubmit(inventoryAddForm);">
+                        <div class="mb-3">
+
+
+                            <!-- Staff ID -->
+                            <!-- <div class="form-group">
+                                <label for="inventoryId" class="form-label">Staff ID</label>
+                
+                                <input type="text" class="form-control" placeholder="Staff ID" aria-label="Staff ID"
+                                    aria-describedby="basic-addon2" name="inventoryId" (ngModel)="inventoryId" ngModel required
+                                    #inventoryId="ngModel">
+                
+                                <small class="form-text  text-muted" *ngIf="inventoryId.touched && !inventoryId.valid">Enter the Staff
+                                    ID</small>
+                            </div> -->
+
+
+                            <!-- Inventory Name -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Ingredient Name</label>
+
+                                <input type="text" class="form-control" placeholder="Ingredient Name" name="ingredientName"
+                                    (ngModel)="ingredientName" ngModel required #ingredientName="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="ingredientName.touched && !ingredientName.valid">Enter
+                                    the
+                                    Ingredient Name</small>
+                                </div>
+
+                            <!-- Inventory Quantity -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Ingredient Quantity</label>
+                                <input type="number" class="form-control" placeholder="Ingredient Quantity" name="ingredientQuantity"
+                                    (ngModel)="ingredientQuantity" ngModel required #ingredientQuantity="ngModel">
+                                <small class="form-text  text-muted"
+                                    *ngIf="ingredientQuantity.touched && !ingredientQuantity.valid">Enter the Ingredient
+                                    Quantity</small><br>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Type</label>
+                                <!-- <input type="text" class="form-control" placeholder="Designation" aria-label="Staff's Designation"
+                                aria-describedby="basic-addon2" name="staffDesg" ngModel required> --><br>
+
+                                <input class="form-check-input" type="radio" id="flexRadioDefault1" value="Spices"
+                                    name="type" (ngModel)="type" ngModel required
+                                    #type="ngModel">&nbsp;
+                                <label class="form-check-label" for="flexRadioDefault1">Spices</label>&nbsp;&nbsp;<br>
+                                <input class="form-check-input" type="radio" id="flexRadioDefault2" value="Fruits"
+                                    name="type" checked (ngModel)="type" ngModel required
+                                    #type="ngModel">&nbsp;
+                                <label class="form-check-label" for="flexRadioDefault2">Fruits</label>&nbsp;&nbsp;<br>
+                                <input class="form-check-input" type="radio" id="flexRadioDefault2" value="Vegetables"
+                                    name="type" checked (ngModel)="type" ngModel required
+                                    #type="ngModel">&nbsp;
+                                <label class="form-check-label" for="flexRadioDefault2">Vegetables</label>&nbsp;&nbsp;<br>
+                                <input class="form-check-input" type="radio" id="flexRadioDefault2" value="Non Veg"
+                                    name="type" checked (ngModel)="type" ngModel required
+                                    #type="ngModel">&nbsp;
+                                <label class="form-check-label" for="flexRadioDefault2">Non Veg</label>&nbsp;&nbsp;<br>
+                                <input class="form-check-input" type="radio" id="flexRadioDefault2" value="Dairy"
+                                    name="type" checked (ngModel)="type" ngModel required
+                                    #type="ngModel">&nbsp;
+                                <label class="form-check-label" for="flexRadioDefault2">Dairy</label>
+                                <!-- <small class="form-text  text-muted" *ngIf="staffDesg.touched && !staffDesg.valid">Enter the Staff Designation</small><br> -->
+                            </div>
+
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Supplier ID</label>
+                                <input type="number" class="form-control" placeholder="Supplier Id" name="supplierId"
+                                    (ngModel)="supplierId" ngModel required #supplierId="ngModel">
+                                <small class="form-text  text-muted"
+                                    *ngIf="supplierId.touched && !supplierId.valid">Enter
+                                    the Supplier ID</small><br>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100" [disabled]="!inventoryAddForm.valid"
+                                value="onSubmit">Add</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+        </div>
+    </div>
+</div>
+
+
+<!--======================================================  -->
+<!--======================================================  -->
+<!-- ===================Update Staff PopUp================ -->
+<!--======================================================  -->
+<!--======================================================  -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 50%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+
+                    <!-- ===================================================================== -->
+                    <!-- ======================== Popup Body starting ======================== -->
+                    <!-- ===================================================================== -->
+
+                    <form action="" #inventoryUpdateForm="ngForm" (ngSubmit)="updateInventory();">
+                        <div class="mb-3">
+
+
+                            <!-- Inventory ID -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Ingredient ID</label>
+                            
+                                <input type="text" class="form-control" placeholder="Ingredient ID"
+                                    name="ingredientId" [(ngModel)]="inventoryToUpdate.ingredientId" ngModel disabled #ingredientId="ngModel">
+                            
+                                <small class="form-text  text-muted" *ngIf="ingredientId.touched && !ingredientId.valid">Enter the Ingredient
+                                    ID</small>
+                            </div>
+
+
+                            <!-- Inventory Name -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Ingredient Name</label>
+
+                                <input type="text" class="form-control" placeholder="Ingredient Name" name="ingredientName"
+                                    [(ngModel)]="inventoryToUpdate.ingredientName" ngModel required #ingredientName="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="ingredientName.touched && !ingredientName.valid">Enter
+                                    the
+                                    Ingredient Name</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Type</label>
+                                <!-- <input type="text" class="form-control" placeholder="Designation" aria-label="Staff's Designation"
+                                aria-describedby="basic-addon2" name="staffDesg" ngModel required> --><br>
+
+                                <input class="form-check-input" type="radio" id="flexRadioDefault1" value="Spices"
+                                    name="type" [(ngModel)]="inventoryToUpdate.type" ngModel required
+                                    #type="ngModel">&nbsp;
+                                <label class="form-check-label" for="flexRadioDefault1">Spices</label>&nbsp;&nbsp;<br>
+                                <input class="form-check-input" type="radio" id="flexRadioDefault2" value="Fruits"
+                                    name="type" checked [(ngModel)]="inventoryToUpdate.type" ngModel required
+                                    #type="ngModel">&nbsp;
+                                <label class="form-check-label" for="flexRadioDefault2">Fruits</label>&nbsp;&nbsp;<br>
+                                <input class="form-check-input" type="radio" id="flexRadioDefault2" value="Vegetables"
+                                    name="type" checked [(ngModel)]="inventoryToUpdate.type" ngModel required
+                                    #type="ngModel">&nbsp;
+                                <label class="form-check-label" for="flexRadioDefault2">Vegetables</label>&nbsp;&nbsp;<br>
+                                <input class="form-check-input" type="radio" id="flexRadioDefault2" value="Non Veg"
+                                    name="type" checked [(ngModel)]="inventoryToUpdate.type" ngModel required
+                                    #type="ngModel">&nbsp;
+                                <label class="form-check-label" for="flexRadioDefault2">Non Veg</label>&nbsp;&nbsp;<br>
+                                <input class="form-check-input" type="radio" id="flexRadioDefault2" value="Dairy"
+                                    name="type" checked [(ngModel)]="inventoryToUpdate.type" ngModel required
+                                    #type="ngModel">&nbsp;
+                                <label class="form-check-label" for="flexRadioDefault2">Dairy</label>&nbsp;&nbsp;<br>
+                                <input class="form-check-input" type="radio" id="flexRadioDefault2" value="Sauces"
+                                    name="type" checked [(ngModel)]="inventoryToUpdate.type" ngModel required
+                                    #type="ngModel">&nbsp;
+                                <label class="form-check-label" for="flexRadioDefault2">Sauces</label>
+                                <!-- <small class="form-text  text-muted" *ngIf="staffDesg.touched && !staffDesg.valid">Enter the Staff Designation</small><br> -->
+                            </div>
+                        
+                            <!-- Inventory Phone Number -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Quantity</label>
+                                <input type="number" class="form-control" placeholder="Quantity" name="ingredientQuantity"
+                                    [(ngModel)]="inventoryToUpdate.ingredientQuantity" ngModel required #ingredientQuantity="ngModel">
+                                <small class="form-text  text-muted"
+                                    *ngIf="ingredientQuantity.touched && !ingredientQuantity.valid">Enter
+                                    the Ingredient Quantity</small><br>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Supplier ID</label>
+                                <input type="number" class="form-control" placeholder="Quantity" name="supplierId"
+                                    [(ngModel)]="inventoryToUpdate.supplierId" ngModel required #supplierId="ngModel">
+                                <small class="form-text  text-muted"
+                                    *ngIf="supplierId.touched && !supplierId.valid">Enter
+                                    the Supplier ID</small><br>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100" [disabled]="!inventoryUpdateForm.valid"
+                                value="onSubmit">Update</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<app-admin-navbar></app-admin-navbar>
+
+<router-outlet> </router-outlet>
+
+<div class="dash-content">
+    <div class="overview">
+        <div class="title">
+            <i class='fas fa-chart-line'></i>
+            <span class="text">Dashboard</span>
+        </div>
+
+        <div class="boxes">
+            <div class="box box1">
+                <i class="uil uil-thumbs-up"></i>
+                <span class="text">Revenue</span>
+                <span class="number">Rs.50,120</span>
+            </div>
+            <div class="box box2">
+                <i class="uil uil-comments"></i>
+                <span class="text">Orders</span>
+                <span class="number">894</span>
+            </div>
+            <div class="box box3">
+                <i class="uil uil-share"></i>
+                <span class="text">Bookings</span>
+                <span class="number">120</span>
+            </div>
+        </div>
+    </div>
+    <div class="activity">
+        <div class="title">
+            <i class='fas fa-clock'></i>
+            <span class="text">Recent Activity</span>
+        </div>
+        <table class="activity-data">
+            <tr>
+                <th class="data-title">Name</th>
+                <th class="data-title">Email</th>
+                <th class="data-title">Orders</th>
+                <th class="data-title">Type</th>
+                <th class="data-title">Billing Status</th>
+            </tr>
+            <tr *ngFor="let data of TableData">
+                <td class="data-list">{{data.name}}</td>
+                <td class="data-list">{{data.email}}</td>
+                <td class="data-list">{{data.orders}}</td>
+                <td class="data-list">{{data.type}}</td>
+                <td class="data-list">{{data.status}}</td>
+            </tr>
+        </table>
+        
+        
+        
+   
+

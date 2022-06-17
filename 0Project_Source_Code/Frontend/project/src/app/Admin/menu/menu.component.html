@@ -1,0 +1,482 @@
+
+
+<app-admin-navbar></app-admin-navbar>
+
+<router-outlet> </router-outlet>
+
+ <!-- <div class="ms-content-wrapper">
+    <div class="ms-panel">
+        <div class="ms-panel-header">
+            <h6>Product List</h6>
+            <a id="add" class="btn btn-primary"> Add Item </a>
+            <div class="table-responsive">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="data-table-5" class="table  thead-primary dataTable no-footer" role="grid"
+                            aria-describedby="data-table-5_info" style="width: 843px;">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="data-table-5"
+                                        rowspan="1" colspan="1" aria-sort="ascending"
+                                        aria-label="Product ID: activate to sort column descending"
+                                        style="width: 116px;">Product ID</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Product Name: activate to sort column ascending"
+                                        style="width: 244px;">Product Name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Quantity: activate to sort column ascending"
+                                        style="width: 97px;">Quantity</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Status: activate to sort column ascending"
+                                        style="width: 108px;">Status</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Price: activate to sort column ascending"
+                                        style="width: 68px;">Price</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Price: activate to sort column ascending"
+                                        style="width: 68px;">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd">
+                                    <td class="sorting_1">01475</td>
+                                    <td><img src="/assets/images/1.jpg" style="width:50px; height:30px;">Aloo Prantha
+                                    </td>
+                                    <td>6741</td>
+                                    <td>In Stock</td>
+                                    <td>$47</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">02351</td>
+                                    <td><img src="/assets/images/2.jpg" style="width:50px; height:30px;">Masala Dosa
+                                    </td>
+                                    <td>8899</td>
+                                    <td>In Stock</td>
+                                    <td>$16</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">12121</td>
+                                    <td><img src="/assets/images/3.jpg" style="width:50px; height:30px;">Poha </td>
+                                    <td>6224</td>
+                                    <td>In Stock</td>
+                                    <td>$43</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">12145</td>
+                                    <td><img src="/assets/images/4.jpg" style="width:50px; height:30px;">Sandwich</td>
+                                    <td>1965</td>
+                                    <td>Out Of Stock</td>
+                                    <td>$3</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">14451</td>
+                                    <td><img src="/assets/images/5.jpg" style="width:50px; height:30px;">Pasta</td>
+                                    <td>5384</td>
+                                    <td>Out Of Stock</td>
+                                    <td>$85</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">14526</td>
+                                    <td><img src="/assets/images/6.jpg" style="width:50px; height:30px;">Oats</td>
+                                    <td>2860</td>
+                                    <td>In Stock</td>
+                                    <td>$21</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">15451</td>
+                                    <td><img src="/assets/images/7.jpg" style="width:50px; height:30px;">Idli Sambar
+                                    </td>
+                                    <td>8240</td>
+                                    <td>In Stock</td>
+                                    <td>$32</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">15485</td>
+                                    <td><img src="/assets/images/8.jpg" style="width:50px; height:30px;">Avocado Toast
+                                    </td>
+                                    <td>3023</td>
+                                    <td>In Stock</td>
+                                    <td>$10</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">22366</td>
+                                    <td><img src="/assets/images/9.jpg" style="width:50px; height:30px;">Manchurian</td>
+                                    <td>2558</td>
+                                    <td>Out Of Stock</td>
+                                    <td>$13</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">25252</td>
+                                    <td><img src="/assets/images/10.jpg" style="width:50px; height:30px;"> Kadai Paneer
+                                    </td>
+                                    <td>4804</td>
+                                    <td>In Stock</td>
+                                    <td>$37</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">28366</td>
+                                    <td><img src="/assets/images/11.jpg" style="width:50px; height:30px;">Veg. Biryani
+                                    </td>
+                                    <td>2558</td>
+                                    <td>Out Of Stock</td>
+                                    <td>$13</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">29252</td>
+                                    <td><img src="/assets/images/12.jpg" style="width:50px; height:30px;"> Dal Makhani
+                                    </td>
+                                    <td>4804</td>
+                                    <td>In Stock</td>
+                                    <td>$37</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="ms-content-wrapper">
+    <div class="ms-panel">
+        <div class="ms-panel-header">
+            <h6 class="menulist">Menu List</h6>
+            <hr>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal" id="add"> Add
+                Menu </button>
+
+            <div class="table-responsive">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="data-table-5" class="table  thead-primary dataTable no-footer" role="grid"
+                            aria-describedby="data-table-5_info" style="width: 843px;">
+                            <thead class="thead">
+                                <tr>
+                                    <th scope="col">MenuId</th>
+                                    <th scope="col">Menu Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                <tr *ngFor="let menu of menuDetails">
+                                    <td>{{menu.menuId}}</td>
+                                    <td>
+                                        <img src={{menu.url}} style="width:50px; height:30px;">{{menu.name}}
+                                    </td>
+                                    <td>{{menu.price|currency}}</td>
+                                    <td>{{menu.quantity}}</td>
+                                    <td  [ngStyle]="{'background-image':menu.status === 'Available'?'linear-gradient(310deg, #2dce89 0%, #2dcecc 100%)':'linear-gradient(310deg, #fc6a50  0%, #f19d75 100%)'}">{{menu.status}}</td>
+                                    <td><button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal" (click)="edit(menu)"
+                                            id="update">Update</button>&nbsp;
+                                        <button type="button" class="btn btn-danger" (click)="deleteMenu(menu)"
+                                            id="delete">Delete</button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- <router-outlet></router-outlet> -->
+        </div>
+    </div>
+</div>
+
+<!--======================================================  -->
+<!--======================================================  -->
+<!-- ===================Add Menu PopUp =================== -->
+<!--======================================================  -->
+<!--======================================================  -->
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Menu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <form action="" #menuAddForm="ngForm" (ngSubmit)="onSubmit(menuAddForm);">
+                        <div class="mb-3">
+
+
+                            <!-- Menu ID -->
+                            <!-- <div class="form-group">
+                                <label for="menuId" class="form-label">Menu ID</label>
+                
+                                <input type="text" class="form-control" placeholder="Menu ID" aria-label="Menu ID"
+                                    aria-describedby="basic-addon2" name="menuId" (ngModel)="menuId" ngModel required
+                                    #menuId="ngModel">
+                
+                                <small class="form-text  text-muted" *ngIf="menuId.touched && !menuId.valid">Enter the Menu
+                                    ID</small>
+                            </div> -->
+
+
+                            <!-- Menu Name -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Menu Name</label>
+
+                                <input type="text" class="form-control" placeholder="Menu Name" name="name"
+                                    (ngModel)="name" ngModel required #name="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="name.touched && !name.valid">Enter
+                                    the Menu Name</small>
+                            </div>
+
+                            <!-- <div class="form-group">
+                                <label for="basic-url" class="form-label">Menu Last Name</label>
+
+                                <input type="text" class="form-control" placeholder="Menu Last Name" name="lastName"
+                                    (ngModel)="lastName" ngModel required #lastName="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="lastName.touched && !lastName.valid">Enter
+                                    the
+                                    Menu Last Name</small>
+                            </div> -->
+
+                            <!-- <div class="form-group">
+                                <div class="custom-file mb-3">
+                                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                </div>
+                            </div> -->
+
+                            <!--======== Choose file for image =========-->
+                            <!-- <div class="form-group">
+                                <label for="exampleFormControlFile1">Choose Image</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1" name="picture" (ngModel)="picture" ngModel #picture="ngModel">
+                            </div> -->
+
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Menu Image URL</label>
+
+                                <input type="text" class="form-control" placeholder="Menu Image URL" name="url"
+                                    [(ngModel)]="menuToUpdate.url" (ngModel)="url" ngModel required #url="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="url.touched && !url.valid">Enter
+                                    the Menu Image URL</small>
+                            </div>
+
+                            <!-- Menu Quantity -->
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">Quantity</label>
+                                <input type="number" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Quantity" name="quantity" (ngModel)="quantity" ngModel required
+                                    #quantity="ngModel">
+                                <small class="form-text  text-muted" *ngIf="quantity.touched && !quantity.valid">Enter
+                                    the Quantity</small>
+                            </div>
+
+
+                            <!-- Menu Status -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Status</label>
+
+                                <input type="text" class="form-control" placeholder="Status" name="status"
+                                    (ngModel)="status" ngModel required #status="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="status.touched && !status.valid">Enter
+                                    the Menu Name</small>
+                            </div>
+
+                            <!-- Menu Price -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Price</label>
+                                <input type="number" class="form-control" placeholder="Price" name="price"
+                                    (ngModel)="price" ngModel required #price="ngModel">
+                                <small class="form-text  text-muted" *ngIf="price.touched && !price.valid">Enter the
+                                    Price</small><br>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" [disabled]="!menuAddForm.valid"
+                                value="onSubmit">Add</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+        </div>
+    </div>
+</div>
+
+
+<!--======================================================  -->
+<!--======================================================  -->
+<!-- ===================Update Menu PopUp================ -->
+<!--======================================================  -->
+<!--======================================================  -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 50%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+
+                    <!-- ===================================================================== -->
+                    <!-- ======================== Popup Body starting ======================== -->
+                    <!-- ===================================================================== -->
+
+                    <form action="" #menuUpdateForm="ngForm" (ngSubmit)="updateMenu();">
+                        <div class="mb-3">
+
+
+                            <!-- Menu ID -->
+                            <div class="form-group">
+                                <label for="menuId" class="form-label">Menu ID</label>
+
+                                <input type="text" class="form-control" placeholder="Menu ID" name="menuId"
+                                    [(ngModel)]="menuToUpdate.menuId" ngModel disabled #menuId="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="menuId.touched && !menuId.valid">Enter the
+                                    Menu ID</small>
+                            </div>
+
+
+                            <!-- Menu Name -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Menu Name</label>
+
+                                <input type="text" class="form-control" placeholder="Menu Name" name="name"
+                                    [(ngModel)]="menuToUpdate.name" (ngModel)="name" ngModel required #name="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="name.touched && !name.valid">Enter
+                                    the Menu Name</small>
+                            </div>
+                            <!-- <div class="form-group">
+                                <label for="basic-url" class="form-label">Menu Last Name</label>
+
+                                <input type="text" class="form-control" placeholder="Menu Last Name" name="lastName"
+                                    (ngModel)="lastName" ngModel required #lastName="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="lastName.touched && !lastName.valid">Enter
+                                    the
+                                    Menu Last Name</small>
+                            </div> -->
+
+                            <!--======== Choose file for image =========-->
+                            <!-- <div class="form-group">
+                                <label for="exampleFormControlFile1">Choose Image</label>
+                                <input type="file" class="form-control-file" (change)="onFileSelected($event)" id="exampleFormControlFile1" name="picture" (ngModel)="picture" ngModel #picture="ngModel" [(ngModel)]="menuToUpdate.picture">
+                            </div> -->
+
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Menu Image URL</label>
+
+                                <input type="text" class="form-control" placeholder="Menu Image URL" name="url"
+                                    [(ngModel)]="menuToUpdate.url" (ngModel)="url" ngModel required #url="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="name.touched && !name.valid">Enter
+                                    the Menu Name</small>
+                            </div>
+
+
+                            <!-- Menu Quantity -->
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">Quantity</label>
+                                <input type="number" class="form-control" id="exampleFormControlInput1"
+                                    [(ngModel)]="menuToUpdate.quantity" placeholder="Quantity" name="quantity"
+                                    (ngModel)="quantity" ngModel required #quantity="ngModel">
+                                <small class="form-text  text-muted" *ngIf="quantity.touched && !quantity.valid">Enter
+                                    the Quantity</small>
+                            </div>
+
+
+                            <!-- Menu Status -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Status</label>
+
+                                <input type="text" class="form-control" placeholder="Status" name="status"
+                                    [(ngModel)]="menuToUpdate.status" (ngModel)="status" ngModel required
+                                    #status="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="status.touched && !status.valid">Enter
+                                    the Menu Name</small>
+                            </div>
+
+                            <!-- Menu Price -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Price</label>
+                                <input type="number" class="form-control" placeholder="Price" name="price"
+                                    [(ngModel)]="menuToUpdate.price" (ngModel)="price" ngModel required
+                                    #price="ngModel">
+                                <small class="form-text  text-muted" *ngIf="price.touched && !price.valid">Enter the
+                                    Price</small><br>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" [disabled]="!menuUpdateForm.valid"
+                                value="onSubmit">Update</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+    </div>
+</div>

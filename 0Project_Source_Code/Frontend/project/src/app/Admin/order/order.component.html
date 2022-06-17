@@ -1,0 +1,249 @@
+<app-admin-navbar></app-admin-navbar>
+
+<router-outlet> </router-outlet>
+<div class="ms-content-wrapper">
+    <div class="ms-panel">
+        <div class="ms-panel-header">
+            <h6>Order Status</h6>
+            <hr>
+            <!-- <div class="table-responsive">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="data-table-5" class="table  thead-primary dataTable no-footer" role="grid"
+                            aria-describedby="data-table-5_info" style="width: 843px;">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="data-table-5"
+                                        rowspan="1" colspan="1" aria-sort="ascending"
+                                        aria-label="Product ID: activate to sort column descending"
+                                        style="width: 116px;">Order ID</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Product Name: activate to sort column ascending"
+                                        style="width: 244px;">Customer Name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Quantity: activate to sort column ascending"
+                                        style="width: 97px;">Order Name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Status: activate to sort column ascending"
+                                        style="width: 108px;">Location</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Price: activate to sort column ascending"
+                                        style="width: 68px;">Order Status</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Status: activate to sort column ascending"
+                                        style="width: 108px;">Price</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Status: activate to sort column ascending"
+                                        style="width: 108px;">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd">
+                                    <td class="sorting_1">01475</td>
+                                    <td>
+                                        <p class="name">Shahrukh Khan</p>
+                                    </td>
+                                    <td>Biryani</td>
+                                    <td>Kochi</td>
+                                    <td class="statuson">Completed</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">02351</td>
+                                    <td>
+                                        <p class="name">Ajay Devgan</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statusoff">Cancelled</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">12121</td>
+                                    <td>
+                                        <p class="name">Akshay Kumar</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statuspen">Pending</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">12145</td>
+                                    <td>
+                                        <p class="name">Amitabh Bacchan</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statuson">Completed</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">14451</td>
+                                    <td>
+                                        <p class="name">Ranveer Singh</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statusoff">Cancelled</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">14526</td>
+                                    <td>
+                                        <p class="name">Salman Khan</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statuson">Completed</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">15451</td>
+                                    <td>
+                                        <p class="name">Vimal</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statuspen">Pending</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">15485</td>
+                                    <td>
+                                        <p class="name">Rajni Gandha</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statuson">Completed</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">22366</td>
+                                    <td>
+                                        <p class="name">Virat</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statusoff">Cancelled</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">25252</td>
+                                    <td>
+                                        <p class="name">Harshal</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statusoff">Cancelled</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">28366</td>
+                                    <td>
+                                        <p class="name">Maxwell</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statuson">Completed</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">29252</td>
+                                    <td>
+                                        <p class="name">Ronaldo</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statusoff">Cancelled</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">29252</td>
+                                    <td>
+                                        <p class="name">Anushka</p>
+                                    </td>
+                                    <td>Biryani</td>
+                                    <td>Kochi</td>
+                                    <td class="statuspen">Pending</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">29252</td>
+                                    <td>
+                                        <p class="name">Messi</p>
+                                    </td>
+                                    <td>Dal Makhni</td>
+                                    <td>Kochi</td>
+                                    <td class="statuson">Completed</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">29252</td>
+                                    <td>
+                                        <p class="name">Avneet Kaur</p>
+                                    </td>
+                                    <td>Biryani</td>
+                                    <td>Kochi</td>
+                                    <td class="statusoff">Cancelled</td>
+                                    <td>$10</td>
+                                    <td><a id="delete" class="btn btn-danger">Delete</a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="table-responsive">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="data-table-5" class="table  thead-primary dataTable no-footer" role="grid"
+                            aria-describedby="data-table-5_info" style="width: 843px;">
+                            <thead class="thead">
+                                <tr>
+                                    <th scope="col">OrderId</th>
+                                    <th scope="col">Customer ID</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                <tr *ngFor="let order of orderDetails">
+                                    <td>{{order.orderId}}</td>
+                                    <td>{{order.customerId}}</td>
+                                    <td>{{order.location}}</td>
+                                    <td [ngStyle]="{'background-image':order.status === 'COMPLETED'?'linear-gradient(310deg, #2dce89 0%, #2dcecc 100%)':'linear-gradient(310deg, #fc6a50 0%, #f19d75 100%)'}">{{order.status}}</td>
+                                    <td>{{order.price}}</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

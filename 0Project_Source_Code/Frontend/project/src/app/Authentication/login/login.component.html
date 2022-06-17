@@ -1,0 +1,71 @@
+
+<div class="login">
+    <div class="modal-content">
+      <button type="button" class="close" mat-dialog-close><span aria-hidden="true"><i class="fa fa-xmark"></i></span></button>
+    <h1 class="title" mat-dialog-title>Login</h1>
+    <p class="description">Fill these details to login</p>
+    
+    <div class="modal-body" mat-dialog-content>
+    <form [formGroup]="loginForm" (ngSubmit)="userLogin()">
+        <div>
+         
+          <div class="control" fxFlex="100%">
+            <mat-form-field appearance="outline" class="form-field" [style.width.px]=327>
+              <mat-label>Email</mat-label>
+              <input  matInput formControlName="email" [(ngModel)]="user.email" name="email" required type="email">
+              <mat-error *ngIf="loginForm.value.email">Email should include '@'</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="control" fxFlex="100%">
+            <mat-form-field appearance="outline" class="form-field" [style.width.px]=327>
+              <mat-label>Password</mat-label>
+              <input matInput [(ngModel)]="user.password" formControlName="password" name="password" type="password" required pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8,}$">
+              <mat-error *ngIf="loginForm.value.password">Password must be a combination of lower-case, upper-case, numbers and at least 9 characters long</mat-error>
+            </mat-form-field>
+          </div>
+          
+          <div fxFlex="100%">
+              <button mat-stroked-button color="primary" type="submit" [disabled]="!loginForm.valid" [style.width.px]=327 mat-dialog-close>Login<mat-icon>chevron_right</mat-icon></button>
+          </div>
+        </div>
+    </form>
+    <p class="description">New here? <a class="signup-link" (click)=" openSignupDialog()" mat-dialog-close>Create new account</a></p>
+</div></div>
+</div>
+
+
+ <!-- <form action="" #staffUpdateForm="ngForm">
+  <div class="mb-3">
+
+
+     <-- Staff ID -->
+      <!-- <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+      
+          <input type="email" class="form-control" placeholder="Email"
+              name="id" [(ngModel)]="user.email" ngModel disabled #email="ngModel">
+      
+          <small class="form-text  text-muted" *ngIf="email.touched && !email.valid">Enter the Staff
+              Email</small>
+      </div>
+
+
+      
+      <div class="form-group">
+          <label for="basic-url" class="form-label">Password</label>
+
+          <input type="text" class="form-control" placeholder="Password" name="password"
+              [(ngModel)]="user.password" ngModel required #password="ngModel" pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8,}$">
+
+          <small class="form-text  text-muted" *ngIf="password.touched && !password.valid">Enter
+              the
+              User Password</small>
+      </div>
+      
+      <button type="submit" class="btn btn-primary w-100" [disabled]="!loginForm.valid"
+          value="onSubmit">Login</button>
+
+  </div>
+</form> -->
+
+

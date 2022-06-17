@@ -1,0 +1,43 @@
+<app-admin-navbar></app-admin-navbar>
+<router-outlet></router-outlet>
+<div class="ms-content-wrapper">
+    <div class="ms-panel">
+        <div class="ms-panel-header">
+            <h6 class="stafflist">Customers</h6>
+            <hr>
+            <div class="table-responsive">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="data-table-5" class="table  thead-primary dataTable no-footer" role="grid"
+                            aria-describedby="data-table-5_info" style="width: 843px;">
+                            <thead class="thead">
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email Address</th>
+                                    <th scope="col">Mobile</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                <tr *ngFor="let customer of customerDetails">
+                                    <td>{{customer.id}}</td>
+                                    <td>{{customer.name}}</td>
+                                    <td>{{customer.email}}</td>
+                                    <td>{{customer.mobile}}</td>
+                                    <td>{{customer.address}}</td>
+                                    <td><button type="button" class="btn btn-danger" (click)="deleteCustomer(customer)"
+                                        id="delete">Delete</button></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

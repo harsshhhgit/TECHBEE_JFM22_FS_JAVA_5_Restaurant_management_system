@@ -1,0 +1,45 @@
+<app-admin-navbar>
+</app-admin-navbar>
+
+<router-outlet></router-outlet>
+<div class="ms-content-wrapper">
+    <div class="ms-panel">
+        <div class="ms-panel-header">
+            <h6 class="stafflist">Feedbacks</h6>
+            <hr>
+            <div class="table-responsive">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="data-table-5" class="table  thead-primary dataTable no-footer" role="grid"
+                            aria-describedby="data-table-5_info" style="width: 843px;">
+                            <thead class="thead">
+                                <tr>
+                                    <th scope="col">FeedbackId</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email Address</th>
+                                    <th scope="col">Subject</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                <tr *ngFor="let feedback of feedbackDetails">
+                                    <td>{{feedback.feedbackId}}</td>
+                                    <td>{{feedback.name}}</td>
+                                    <td>{{feedback.email}}</td>
+                                    <td>{{feedback.subject}}</td>
+                                    <td>{{feedback.description}}</td>
+                                    
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <router-outlet></router-outlet> -->

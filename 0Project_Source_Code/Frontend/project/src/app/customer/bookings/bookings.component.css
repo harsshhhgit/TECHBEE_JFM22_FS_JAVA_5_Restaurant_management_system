@@ -1,0 +1,143 @@
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-item img{
+	filter: blur(4px);
+  	-webkit-filter: blur(4px);
+}
+/* .carousel-item .overlay{
+	background-color: rgba(0, 0, 0, 0.9);
+} */
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+	font-family: poppins;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.w-100 {
+	height: 100vh;
+}
+
+/* MAIN_BG LINE 198 bstyle.css */
+
+.main_bg{
+    background-image: url('/assets/Images/Booking/background.jpg');
+    background-color: black;
+    max-width: 1280px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.form{
+    width: 650px;
+}
+
+.form-text{
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+.form-text h1 span img{
+    margin: 0 10px;
+
+}
+.form-text h1{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.form-text p{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+}
+
+.main-form div{
+    margin: 10px 10px;
+    width: 300px;
+    display: inline-block;
+}
+.main-form div input {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    background: none;
+    border: 1px solid #e98401;;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div select{
+    width: 104%;
+    font-family: 'Ubuntu', sans-serif;
+    background: none;
+    border: 1px solid #e98401;;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form .selector{
+	color: #000;
+}
+.main-form div span{
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    font-size: 25px;
+}
+
+#submit{
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+#submit input{
+    font-family: 'Ubuntu', sans-serif;
+    width: 200px;
+    background-color: #e98401 !important;
+    color: white !important;
+    transition: all .3s;
+}
+#submit input:hover{
+    font-family: 'Ubuntu', sans-serif;
+    width: 200px;
+    background: none !important;
+    color: #e98401 !important;
+}
+#submit input:active{
+    font-size: 19px;
+    background-color: rgb(46, 20, 5) !important;
+    color: #fff !important;
+}

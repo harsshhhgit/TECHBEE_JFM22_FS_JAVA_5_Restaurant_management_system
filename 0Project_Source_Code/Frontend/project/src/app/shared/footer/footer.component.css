@@ -1,0 +1,22 @@
+footer{
+    background: #111;
+    padding: 30px 23px;
+    color: #fff;
+    margin-top: 55px;
+    
+}
+footer span a{
+    color: #e98401;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+/* all similar styling code */
+section{
+    padding: 50px 0;
+}
+.about, .services, /*.skills,*/ .fastfood, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}

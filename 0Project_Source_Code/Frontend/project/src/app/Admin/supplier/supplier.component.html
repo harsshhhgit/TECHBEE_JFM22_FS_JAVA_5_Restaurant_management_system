@@ -1,0 +1,503 @@
+
+<app-admin-navbar></app-admin-navbar>
+
+<router-outlet> </router-outlet>
+<div class="ms-content-wrapper">
+    <div class="ms-panel">
+        <div class="ms-panel-header">
+            <h6 class="supplierlist">Supplier List</h6>
+            <hr>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal" id="add"> Add
+                Supplier </button>
+            <!-- <div class="table-responsive">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="data-table-5" class="table  thead-primary dataTable no-footer" role="grid"
+                            aria-describedby="data-table-5_info" style="width: 843px;">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="data-table-5"
+                                        rowspan="1" colspan="1" aria-sort="ascending"
+                                        aria-label="Product ID: activate to sort column descending"
+                                        style="width: 116px;">Staff ID</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Product Name: activate to sort column ascending"
+                                        style="width: 244px;">Staff Name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Quantity: activate to sort column ascending"
+                                        style="width: 97px;">Designation</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Status: activate to sort column ascending"
+                                        style="width: 108px;">Phone Number</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Price: activate to sort column ascending"
+                                        style="width: 68px;">Status</th>
+                                    <th class="sorting" tabindex="0" aria-controls="data-table-5" rowspan="1"
+                                        colspan="1" aria-label="Price: activate to sort column ascending"
+                                        style="width: 68px;">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd">
+                                    <td class="sorting_1">01475</td>
+                                    <td>
+                                        <p class="name">Shahrukh Khan</p>
+                                        <p class="email">sk@gmail.com</p>
+                                    </td>
+                                    <td>Chef</td>
+                                    <td>9999999999</td>
+                                    <td class="statuson">Online</td>
+                                    <td><a id="update" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">02351</td>
+                                    <td>
+                                        <p class="name">Ajay Devgan</p>
+                                        <p class="email">ad@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statusoff">Offline</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">12121</td>
+                                    <td>
+                                        <p class="name">Akshay Kumar</p>
+                                        <p class="email">ak@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statusoff">Offline</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">12145</td>
+                                    <td>
+                                        <p class="name">Amitabh Bacchan</p>
+                                        <p class="email">ab@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statuson">Online</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">14451</td>
+                                    <td>
+                                        <p class="name">Ranveer Singh</p>
+                                        <p class="email">rs@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statusoff">Offline</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">14526</td>
+                                    <td>
+                                        <p class="name">Salman Khan</p>
+                                        <p class="email">sk@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statuson">Online</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">15451</td>
+                                    <td>
+                                        <p class="name">Vimal</p>
+                                        <p class="email">vimal@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statuson">Online</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">15485</td>
+                                    <td>
+                                        <p class="name">Rajni Gandha</p>
+                                        <p class="email">rg@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statuson">Online</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">22366</td>
+                                    <td>
+                                        <p class="name">Virat</p>
+                                        <p class="email">virat@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statusoff">Offline</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">25252</td>
+                                    <td>
+                                        <p class="name">Harshal</p>
+                                        <p class="email">hp@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statusoff">Offline</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1">28366</td>
+                                    <td>
+                                        <p class="name">Maxwell</p>
+                                        <p class="email">max@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statuson">Online</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">29252</td>
+                                    <td>
+                                        <p class="name">Ronaldo</p>
+                                        <p class="email">cr7@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statusoff">Offline</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">29252</td>
+                                    <td>
+                                        <p class="name">Anushka</p>
+                                        <p class="email">anusen@gmail.com</p>
+                                    </td>
+                                    <td>Chef</td>
+                                    <td>9999999999</td>
+                                    <td class="statuson">Online</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">29252</td>
+                                    <td>
+                                        <p class="name">Messi</p>
+                                        <p class="email">messi@gmail.com</p>
+                                    </td>
+                                    <td>Staff</td>
+                                    <td>9999999999</td>
+                                    <td class="statuson">Online</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1">29252</td>
+                                    <td>
+                                        <p class="name">Avneet Kaur</p>
+                                        <p class="email">avnkaur@gmail.com</p>
+                                    </td>
+                                    <td>Chef</td>
+                                    <td>9999999999</td>
+                                    <td class="statusoff">Offline</td>
+                                    <td><a id="update" class="btn btn-primary">Update</a>
+                                        <a id="delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div> -->
+            <div class="table-responsive">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="data-table-5" class="table  thead-primary dataTable no-footer" role="grid"
+                            aria-describedby="data-table-5_info" style="width: 843px;">
+                            <thead class="thead">
+                                <tr>
+                                    <th scope="col">SupplierId</th>
+                                    <th scope="col">Supplier First Name</th>
+                                    <th scope="col">Supplier Last Name</th>
+                                    <th scope="col">Supplier City</th>
+                                    <th scope="col">Email Address</th>
+                                    <th scope="col">Phone Number</th>
+                                    <th scoppe="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                <tr *ngFor="let supplier of supplierDetails">
+                                    <td>{{supplier.supplierId}}</td>
+                                    <td>{{supplier.firstName}}</td>
+                                    <td>{{supplier.lastName}}</td>
+                                    <td>{{supplier.city}}</td>
+                                    <td>{{supplier.emailId}}</td>
+                                    <td>{{supplier.phoneNumber}}</td>
+                                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" (click)="edit(supplier)" id="update">Update</button>&nbsp;
+                                    <button type="button" class="btn btn-danger" (click)="deleteSupplier(supplier)" id="delete">Delete</button></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal -->
+
+
+
+            <!-- <router-outlet></router-outlet> -->
+
+
+        </div>
+    </div>
+</div>
+
+<!--======================================================  -->
+<!--======================================================  -->
+<!-- ===================Add Staff PopUp =================== -->
+<!--======================================================  -->
+<!--======================================================  -->
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Supplier</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <form action="" #supplierAddForm="ngForm" (ngSubmit)="onSubmit(supplierAddForm);">
+                        <div class="mb-3">
+
+
+                            <!-- Staff ID -->
+                            <!-- <div class="form-group">
+                                <label for="supplierId" class="form-label">Staff ID</label>
+                
+                                <input type="text" class="form-control" placeholder="Staff ID" aria-label="Staff ID"
+                                    aria-describedby="basic-addon2" name="supplierId" (ngModel)="supplierId" ngModel required
+                                    #supplierId="ngModel">
+                
+                                <small class="form-text  text-muted" *ngIf="supplierId.touched && !supplierId.valid">Enter the Staff
+                                    ID</small>
+                            </div> -->
+
+
+                            <!-- Supplier Name -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Supplier First Name</label>
+
+                                <input type="text" class="form-control" placeholder="Supplier First Name" name="firstName"
+                                    (ngModel)="firstName" ngModel required #firstName="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="firstName.touched && !firstName.valid">Enter
+                                    the
+                                    Supplier First Name</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Supplier Last Name</label>
+
+                                <input type="text" class="form-control" placeholder="Supplier Last Name" name="lastName"
+                                    (ngModel)="lastName" ngModel required #lastName="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="lastName.touched && !lastName.valid">Enter
+                                    the
+                                    Supplier Last Name</small>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Supplier City</label>
+
+                                <input type="text" class="form-control" placeholder="Supplier City" name="city"
+                                    (ngModel)="city" ngModel required #city="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="city.touched && !city.valid">Enter
+                                    the
+                                    Supplier City</small>
+                            </div>
+
+
+                            <!-- Supplier Email -->
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com" name="emailId" (ngModel)="emailId" ngModel email
+                                    required #emailId="ngModel">
+                                <small class="form-text  text-muted" *ngIf="emailId.touched && !emailId.valid">Enter the
+                                    Supplier Email
+                                    ID</small>
+                            </div>
+
+                            <!-- Supplier Phone Number -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Phone Number</label>
+                                <input type="number" class="form-control" placeholder="Phone Number" name="phoneNumber"
+                                    (ngModel)="phoneNumber" ngModel required #phoneNumber="ngModel">
+                                <small class="form-text  text-muted"
+                                    *ngIf="phoneNumber.touched && !phoneNumber.valid">Enter the Supplier
+                                    Number</small><br>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" [disabled]="!supplierAddForm.valid"
+                                value="onSubmit">Add</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+        </div>
+    </div>
+</div>
+
+
+<!--======================================================  -->
+<!--======================================================  -->
+<!-- ===================Update Staff PopUp================ -->
+<!--======================================================  -->
+<!--======================================================  -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 50%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+
+                    <!-- ===================================================================== -->
+                    <!-- ======================== Popup Body starting ======================== -->
+                    <!-- ===================================================================== -->
+
+                    <form action="" #supplierUpdateForm="ngForm" (ngSubmit)="updateSupplier();">
+                        <div class="mb-3">
+
+
+                            <!-- Supplier ID -->
+                            <div class="form-group">
+                                <label for="supplierId" class="form-label">Supplier ID</label>
+                            
+                                <input type="text" class="form-control" placeholder="Supplier ID"
+                                    name="supplierId" [(ngModel)]="supplierToUpdate.supplierId" ngModel disabled #supplierId="ngModel">
+                            
+                                <small class="form-text  text-muted" *ngIf="supplierId.touched && !supplierId.valid">Enter the Supplier
+                                    ID</small>
+                            </div>
+
+
+                            <!-- Supplier Name -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Supplier First Name</label>
+
+                                <input type="text" class="form-control" placeholder="Supplier First Name" name="firstName"
+                                    [(ngModel)]="supplierToUpdate.firstName" ngModel required #firstName="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="firstName.touched && !firstName.valid">Enter
+                                    the
+                                    Supplier First Name</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Supplier Last Name</label>
+
+                                <input type="text" class="form-control" placeholder="Supplier Last Name" name="lastName"
+                                    [(ngModel)]="supplierToUpdate.lastName" ngModel required #lastName="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="lastName.touched && !lastName.valid">Enter
+                                    the
+                                    Supplier Last Name</small>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Supplier City</label>
+
+                                <input type="text" class="form-control" placeholder="Supplier City" name="city"
+                                    [(ngModel)]="supplierToUpdate.city" ngModel required #city="ngModel">
+
+                                <small class="form-text  text-muted" *ngIf="city.touched && !city.valid">Enter
+                                    the
+                                    Supplier City</small>
+                            </div>
+
+
+                            <!-- Supplier Email -->
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com" name="emailId" [(ngModel)]="supplierToUpdate.emailId" ngModel email
+                                    required #emailId="ngModel">
+                                <small class="form-text  text-muted" *ngIf="emailId.touched && !emailId.valid">Enter the
+                                    Supplier Email ID</small>
+                            </div>
+
+                            <!-- Supplier Phone Number -->
+                            <div class="form-group">
+                                <label for="basic-url" class="form-label">Phone Number</label>
+                                <input type="number" class="form-control" placeholder="Phone Number" name="phoneNumber"
+                                    [(ngModel)]="supplierToUpdate.phoneNumber" ngModel required #phoneNumber="ngModel">
+                                <small class="form-text  text-muted"
+                                    *ngIf="phoneNumber.touched && !phoneNumber.valid">Enter
+                                    the Supplier Number</small><br>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" [disabled]="!supplierUpdateForm.valid"
+                                value="onSubmit">Update</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+    </div>
+</div>

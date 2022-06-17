@@ -1,0 +1,66 @@
+<div class="signup">
+    <div class="modal-content">
+      <button type="button" class="close" mat-dialog-close><span aria-hidden="true"><i class="fa fa-xmark"></i></span></button>
+    <h1 class="title" mat-dialog-title>Signup</h1>
+    <p class="description">Fill these details to register</p>
+    
+    <div class="modal-body" mat-dialog-content>
+    <form [formGroup]="registerForm" (ngSubmit)="registerUser()">
+        <div class="form">
+            <div class="control" fxFlex="100%">
+                <mat-form-field appearance="outline" class="form-field"[style.width.px]=327>
+                  <mat-label>Name</mat-label>
+                  <input [(ngModel)]="newUser.name" matInput formControlName="name" name="name" required>
+                </mat-form-field>
+              </div>
+              <!-- <div class="control" fxFlex="100%">
+                <mat-form-field appearance="outline" class="form-field" [style.width.px]=327>
+                  <mat-label>Username</mat-label>
+                  <input [(ngModel)]="newUser.username" matInput formControlName="username" name="username" required type="username">
+                </mat-form-field>
+              </div> -->
+              <div class="control" fxFlex="100%">
+                <mat-form-field appearance="outline" class="form-field" [style.width.px]=327>
+                  <mat-label>Email</mat-label>
+                  <input [(ngModel)]="newUser.email" matInput formControlName="email" name="email" required type="email">
+                </mat-form-field>
+              </div>
+          <div class="control" fxFlex="100%">
+            <mat-form-field appearance="outline" class="form-field" [style.width.px]=327>
+              <mat-label>Mobile</mat-label>
+              <input [(ngModel)]="newUser.mobile" matInput formControlName="mobile" name="mobile" required type="text" pattern="[7-9]{1}[0-9]{9}">
+              <mat-error *ngIf="registerForm.value.mobile">Mobile number contains 0-9</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="control" fxFlex="100%">
+            <mat-form-field appearance="outline" class="form-field" [style.width.px]=327>
+              <mat-label>Address</mat-label>
+              <input [(ngModel)]="newUser.address" matInput formControlName="address" name="address" required type="address">
+            </mat-form-field>
+          </div>
+
+          <div class="control" fxFlex="100%">
+            <mat-form-field appearance="outline" class="form-field" [style.width.px]=327>
+              <mat-label>Password</mat-label>
+              <input [(ngModel)]="newUser.password" matInput formControlName="password" name="password" type="password" required pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8,}$">
+              <mat-error *ngIf="registerForm.value.password">Password must be a combination of lower-case, upper-case, numbers and at least 9 characters long</mat-error>
+            </mat-form-field>
+          </div>
+          <!-- <div fxFlex="100%">
+           <mat-form-field appearance="outline" class="form-field" [style.width.px]=327>
+              <mat-label>Confirm Password</mat-label>
+              <input matInput formControlName="confirmPassword" name="confirmPassword" type="password">
+              <mat-error *ngIf="registerForm.value.confirmPassword!=registerForm.value.password">Passwords do not match.</mat-error> -->
+              <!-- <mat-error [class.d-none]="(confirmPassword.value == password.value) || confirmPassword.untouched ">
+                Confirm your password
+                </mat-error>
+            </mat-form-field>
+          </div> -->
+          
+          <div fxFlex="100%" >
+              <button mat-stroked-button color="primary" [style.width.px]=327 type="submit" [disabled]="!registerForm.valid" mat-dialog-close>Register<mat-icon>chevron_right</mat-icon></button>
+          </div>
+        </div>
+    </form>
+</div></div>
+</div>

@@ -1,0 +1,22 @@
+
+<div class="navbar">
+    <div class="logo-container">
+      
+        <img class="logo-text" src="../../../assets/Images/logo.png">
+       
+    </div>
+     <ul class="navbar-nav">
+        <li class="navbar-item" *ngFor="let data of navData">
+            <a class="navbar-link" [routerLink]="[data.routeLink]" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <i class="navbar-link-icon" [class]="data.icon"></i>
+                <span class="navbar-link-text">
+                    {{data.label}}
+                </span>
+            </a>
+            </li>
+            </ul>
+</div>
+
+
+<router-outlet></router-outlet>

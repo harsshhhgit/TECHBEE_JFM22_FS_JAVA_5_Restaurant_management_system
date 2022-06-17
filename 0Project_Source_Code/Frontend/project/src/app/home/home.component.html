@@ -1,0 +1,220 @@
+<!-- Home section start -->
+<app-navbar></app-navbar>
+<section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-1">Hello, we are </div>
+            <div class="text-2"><img src="assets/Images/logo.png" alt=""></div>
+            <div class="text-3">and we deliver <span class="typing"></span></div>
+            <a (click)="openDialog()" class="fcbuttons">Order now</a>
+        </div>
+    </div>
+</section>
+
+<!-- about section start -->
+<section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About us</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="assets/Images/Homepage/1.jpg" alt="A burger with knife">
+            </div>
+            <div class="column right">
+                <div class="text">We are <span class="fontchng"> ZIRA </span>
+                    <!--and we deliver <span class="typing-2"></span>-->
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis natus neque eos sed
+                    deserunt, incidunt itaque atque labore rem, cumque excepturi, maxime sint obcaecati ipsa? Beatae
+                    reprehenderit modi sapiente ipsum dignissimos mollitia reiciendis exercitationem unde officiis,
+                    commodi, animi quo expedita? Adipisci magnam incidunt porro omnis aperiam aut a veniam voluptas
+                    accusantium pariatur impedit quae, repudiandae provident quo doloribus ipsa quisquam?</p>
+                <a href="#" class="fcbuttons">Download Catalogue</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- services section start -->
+<section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title">Our Services</h2>
+        <div class="serv-content">
+            <div class="card">
+                <a (click)="openDialog()" router class="fclinks">
+                    <div class="box">
+                        <i class="iconify" data-icon="ic:outline-delivery-dining"></i>
+                        <div class="text">Delivery</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi libero ad
+                            similique. Explicabo, necessitatibus.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a (click)="openDialog()" class="fclinks">
+                    <div class="box">
+                        <i class="iconify" data-icon="ic:baseline-chair"></i>
+                        <div class="text">Bookings</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi libero ad
+                            similique. Explicabo, necessitatibus.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a (click)="openDialog()" class="fclinks">
+                    <div class="box">
+                        <i class="iconify" data-icon="fa-solid:car"></i>
+                        <div class="text">Drive Thru</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi libero ad
+                            similique. Explicabo, necessitatibus.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Food Category section start -->
+<section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title">Our Food Category</h2>
+        <div class="serv-content">
+            <div class="card">
+                <a (click)="openDialog()" class="fclinks">
+                    <div class="box">
+                        <i class="iconify" data-icon="emojione-monotone:hamburger"></i>
+                        <div class="text">Veg</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi libero ad
+                            similique. Explicabo, necessitatibus.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a (click)="openDialog()" class="fclinks">
+                    <div class="box">
+                        <i class="iconify" data-icon="tabler:meat"></i>
+                        <div class="text">Non-Veg</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi libero ad
+                            similique. Explicabo, necessitatibus.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a (click)="openDialog()" class="fclinks">
+                    <div class="box">
+                        <i class="iconify" data-icon="icon-park-outline:juice"></i>
+                        <div class="text">Beverages</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi libero ad
+                            similique. Explicabo, necessitatibus.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- fastfood Section starts -->
+<!-- <section class="fastfood" id="fastfood">
+            <div class="max-width">
+                <h2 class="title">Our Famous Foods</h2>
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                        <div class="box">
+                            <img src="1.jpg" alt="">
+                            <div class="text">Burger</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="2.jpg" alt="">
+                            <div class="text">Protein Pancakes</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="3.jpg" alt="">
+                            <div class="text">Protein Chunks</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="4.jpg" alt="">
+                            <div class="text">Desert</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="5.jpg" alt="">
+                            <div class="text">Meat</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+<!-- contact section start -->
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Reach us</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Reach Us</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptates numquam, suscipit
+                    recusandae nisi necessitatibus distinctio aut soluta vero maxime!</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Mumbai, Maharastra</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">zira@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="iconify" data-icon="ant-design:clock-circle-filled"></i>
+                        <div class="info">
+                            <div class="head">Timings</div>
+                            <div class="sub-title">Sunday - Saturday: 5pm - 11pm</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Message us</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Description..." required></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+<app-footer></app-footer>
+<router-outlet></router-outlet>
