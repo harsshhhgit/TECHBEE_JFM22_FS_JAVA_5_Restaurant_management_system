@@ -1,6 +1,6 @@
 # TECHBEE_JFM22_FS_JAVA_5_Group_1_Restaurant_management_system
 
-![TECHBEE_JFM22_FS_JAVA_5_Restaurant_management_system](https://socialify.git.ci/harsh1x4/TECHBEE_JFM22_FS_JAVA_5_Restaurant_management_system/image?description=1&descriptionEditable=This%20repository%20consists%20of%20the%20projects%20of%20Group%201%20of%20batch%20TECHBEE_JFM22_FS_JAVA_5.&font=KoHo&language=1&owner=1&pattern=Charlie%20Brown&theme=Dark
+![TECHBEE_JFM22_FS_JAVA_5_Restaurant_management_system](https://socialify.git.ci/harsh1x4/TECHBEE_JFM22_FS_JAVA_5_Restaurant_management_system/image?description=1&descriptionEditable=This%20repository%20consists%20of%20the%20projects%20of%20Group%201%20of%20batch%20TECHBEE_JFM22_FS_JAVA_5.&font=KoHo&language=1&owner=1&pattern=Charlie%20Brown&theme=Dark)
 
 ## Restaurant Management System
 
